@@ -10,6 +10,17 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
   res.sendFile(__dirname + '/about.html');
 });
+app.get('/about', (req, res) => {
+  res.sendFile(__dirname + '/TermsAndCondition.html');
+});
+app.get('/about', (req, res) => {
+  res.sendFile(__dirname + '/PrivacyPolicy.html');
+});
+
+app.get('/about', (req, res) => {
+  res.sendFile(__dirname + '/contact.html');
+});
+
 app.listen(port, () => {
   console.log('Everything is running fine :)');
 });
